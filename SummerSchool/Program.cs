@@ -45,7 +45,10 @@ namespace SummerSchool
 
         private static void Unenrollment()
         {
+            for (int i = 0; i < 15; i++ )
+            {
 
+            }
         }
 
         private static void Print()
@@ -61,7 +64,17 @@ namespace SummerSchool
 
         static void Enrollment()
         {
+            string student;
+            student = Console.ReadLine();
 
+            for (int i = 0; i < 15; i++)
+            {
+                if (Students[i] == null)
+                {
+                    Students[i] = student;
+                    break;
+                }
+            }
         }
 
 
