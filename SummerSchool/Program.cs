@@ -26,11 +26,33 @@ namespace SummerSchool
                 {
                     Enrollment();
                 }
+                else if (choice == 2)
+                {
+                    Unenrollment();
+                }
+                else if (choice == 3)
+                {
+                    Print();
+                }
+                else if (choice == 4)
+                {
+                    Exit();
+                }
 
-                
             }
 
         }
+
+        private static void Unenrollment()
+        {
+
+        }
+
+        private static void Print()
+        {
+
+        }
+
         static void Exit()
         {
             Console.ReadKey();
@@ -41,7 +63,7 @@ namespace SummerSchool
         {
 
         }
-        
+
 
 
     }
