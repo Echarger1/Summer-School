@@ -36,12 +36,9 @@ namespace SummerSchool
                 }
                 else if (choice == 4)
                 {
-                    Exit();
+                    break;
                 }
-                else if (choice !=)
-                {
-                    Console.ReadKey();
-                }
+                Console.ReadKey();
             }
 
         }
@@ -56,21 +53,37 @@ namespace SummerSchool
 
         private static void Print()
         {
-
+            for ( int i = 0; i < Students.Length; i++)
+            {
+                Console.WriteLine(Students[i]);
+            }
         }
 
-        static void Exit()
+        static int GetNextSpot()
         {
-            Console.ReadKey();
-
+            for (int i = 0; i < Students.Length; i++)
+            {
+                if (Students[i] == null)
+                {
+                    return i;
+                }
+                else
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
-
+      
         static void Enrollment()
         {
+        
             string student;
             student = Console.ReadLine();
 
-            for (int i = 0; i < 15; i++)
+            int spot = GetNextSpot();
+            Students[spot] = student;
+            for (int i = 0; i < Students.Length; i++)
             {
                 if (Students[i] == null)
                 {
