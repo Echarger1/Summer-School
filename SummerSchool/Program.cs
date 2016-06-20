@@ -38,7 +38,10 @@ namespace SummerSchool
                 {
                     Exit();
                 }
-
+                else if (choice !=)
+                {
+                    Console.ReadKey();
+                }
             }
 
         }
