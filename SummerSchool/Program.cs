@@ -58,7 +58,7 @@ namespace SummerSchool
         {
             for (int i = 0; i < Students.Length; i++)
             {
-                Console.WriteLine(Students[i]);
+                Console.WriteLine(i + 1 + ". " + Students[i]);
             }
         }
 
