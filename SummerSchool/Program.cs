@@ -38,7 +38,7 @@ namespace SummerSchool
                 {
                     break;
                 }
-                Console.ReadKey();
+                
             }
 
         }
@@ -67,9 +67,7 @@ namespace SummerSchool
                 {
                     return i;
                 }
-               
-               
-                
+ 
             }
             return -1;
         }
@@ -78,6 +76,7 @@ namespace SummerSchool
         {
         
             string student;
+            Console.WriteLine("ENTER STUDENT");
             student = Console.ReadLine();
 
             int spot = GetNextSpot();
