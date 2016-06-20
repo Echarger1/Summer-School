@@ -49,9 +49,18 @@ namespace SummerSchool
 
         private static void Unenrollment()
         {
-            Console.WriteLine("ENTER STUDENT TO REMOVE");
-            string student = Console.ReadLine();
             
+            Console.WriteLine("ENTER STUDENT TO REMOVE");
+            Print();
+
+            int studentnumber = Convert.ToInt32(Console.ReadLine());
+            int studentnumber1 = studentnumber - 1;
+
+            Students[studentnumber1] = null;
+            
+
+
+
         }
 
         private static void Print()
