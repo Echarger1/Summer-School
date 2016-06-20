@@ -10,6 +10,7 @@ namespace SummerSchool
     {
         static string[] Students = new string[15];
         static double[] StudentCost = new double[15];
+        static int[] StudentNumber = new int[15];
         static void Main(string[] args)
         
         {
@@ -114,6 +115,7 @@ namespace SummerSchool
                 StudentCost[spot] = cost;
                 Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost/2);
             }
+          
             else
             {
                 Students[spot] = student;
