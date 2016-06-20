@@ -56,9 +56,9 @@ namespace SummerSchool
             int studentnumber = Convert.ToInt32(Console.ReadLine());
             int studentnumber1 = studentnumber - 1;
 
-            Students[studentnumber1] = null;
-            
+            Console.WriteLine("STUDENT " + Students[studentnumber1] + " HAS BEEN REMOVED");
 
+            Students[studentnumber1] = null;
 
 
         }
