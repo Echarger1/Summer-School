@@ -11,6 +11,7 @@ namespace SummerSchool
         static string[] Students = new string[15];
 
         static void Main(string[] args)
+        
         {
             while (true)
             {
@@ -38,22 +39,24 @@ namespace SummerSchool
                 {
                     break;
                 }
-                
+                else
+                {
+                    Console.WriteLine("NOT A VALID NUMBER TRY AGAIN");
+                }
             }
 
         }
 
         private static void Unenrollment()
         {
-            for (int i = 0; i < 15; i++ )
-            {
-
-            }
+            Console.WriteLine("ENTER STUDENT TO REMOVE");
+            string student = Console.ReadLine();
+            
         }
 
         private static void Print()
         {
-            for ( int i = 0; i < Students.Length; i++)
+            for (int i = 0; i < Students.Length; i++)
             {
                 Console.WriteLine(Students[i]);
             }
