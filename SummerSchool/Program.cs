@@ -90,14 +90,33 @@ namespace SummerSchool
             double cost = 200;
             Console.WriteLine("ENTER STUDENT");
             string student = Console.ReadLine();
-
             int spot = GetNextSpot();
+            if (student.ToLower() == "malfoy")
+            {
+                Console.WriteLine("THIS STUDENT CAN NOT BE ENTERED");
+
+            }
+            else if (student.ToLower() == "tom")
+            {
+                Console.WriteLine("RED ALERT!!! HE WHO MUST NOT BE NAMED!!!");
+            }
+            else if (student.ToLower() == "riddle")
+            {
+                Console.WriteLine("RED ALERT!!! HE WHO MUST NOT BE NAMED!!!");
+            }
+            else if (student.ToLower() == "voldemort")
+            {
+                Console.WriteLine("RED ALERT!!! HE WHO MUST NOT BE NAMED!!!");
+            }
+
+            else
+            {
+                Students[spot] = student;
+                StudentCost[spot] = cost;
+                Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £200");
+            }
+
             
-            Students[spot] = student;
-            StudentCost[spot] = cost;
-            Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £200");
-
-
         }
 
 
