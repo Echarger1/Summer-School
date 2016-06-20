@@ -75,20 +75,13 @@ namespace SummerSchool
         static void Enrollment()
         {
         
-            string student;
+           
             Console.WriteLine("ENTER STUDENT");
-            student = Console.ReadLine();
+            string student = Console.ReadLine();
 
             int spot = GetNextSpot();
             Students[spot] = student;
-            for (int i = 0; i < Students.Length; i++)
-            {
-                if (Students[i] == null)
-                {
-                    Students[i] = student;
-                    break;
-                }
-            }
+           
         }
 
 
