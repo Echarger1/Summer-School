@@ -108,12 +108,18 @@ namespace SummerSchool
             {
                 Console.WriteLine("RED ALERT!!! HE WHO MUST NOT BE NAMED!!!");
             }
-
+            else if (student.ToLower() == "potter")
+            {
+                Students[spot] = student;
+                StudentCost[spot] = cost;
+                Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost/2);
+            }
             else
             {
                 Students[spot] = student;
                 StudentCost[spot] = cost;
-                Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £200");
+                Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost);
+                
             }
 
             
