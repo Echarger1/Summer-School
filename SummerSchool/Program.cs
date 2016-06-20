@@ -134,6 +134,12 @@ namespace SummerSchool
 
             else
             {
+                foreach (char c in student)
+                    if (student == " ")
+                {
+                    Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + 10 % cost);
+                }
+
                 Students[spot] = student;
                 StudentCost[spot] = cost;
                 Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost);
@@ -155,7 +161,41 @@ namespace SummerSchool
             }
             return Count;
         }
+        
+        static void MainMenu()
+        {
+            while (true)
+            {
+                Console.WriteLine("Please select an option:");
+                Console.WriteLine("1.Enroll a student");
+                Console.WriteLine("2.Unenroll a student");
+                Console.WriteLine("3.Print student list");
+                Console.WriteLine("4.Exit");
 
+
+                int choice = Convert.ToInt32(Console.ReadLine());
+                if (choice == 1)
+                {
+                    Enrollment();
+                }
+                else if (choice == 2)
+                {
+                    Unenrollment();
+                }
+                else if (choice == 3)
+                {
+                    Print();
+                }
+                else if (choice == 4)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("NOT A VALID NUMBER TRY AGAIN");
+                }
+            }
+        }
 
     }
 }
