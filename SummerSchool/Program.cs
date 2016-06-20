@@ -67,10 +67,9 @@ namespace SummerSchool
                 {
                     return i;
                 }
-                else
-                {
-                    return i;
-                }
+               
+               
+                
             }
             return -1;
         }
