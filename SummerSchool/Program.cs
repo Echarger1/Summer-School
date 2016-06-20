@@ -9,7 +9,7 @@ namespace SummerSchool
     class Program
     {
         static string[] Students = new string[15];
-
+        static double[] StudentCost = new double[15];
         static void Main(string[] args)
         
         {
@@ -67,7 +67,7 @@ namespace SummerSchool
         {
             for (int i = 0; i < Students.Length; i++)
             {
-                Console.WriteLine(i + 1 + ". " + Students[i]);
+                Console.WriteLine(i + 1 + ". " + Students[i] + " £" + StudentCost[i]);
             }
         }
 
@@ -86,15 +86,15 @@ namespace SummerSchool
       
         static void Enrollment()
         {
-        
-           
+
+            double cost = 200;
             Console.WriteLine("ENTER STUDENT");
             string student = Console.ReadLine();
 
             int spot = GetNextSpot();
             
             Students[spot] = student;
-
+            StudentCost[spot] = cost;
             Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £200");
 
 
