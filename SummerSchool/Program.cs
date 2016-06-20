@@ -115,7 +115,6 @@ namespace SummerSchool
                 StudentCost[spot] = cost;
                 Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost/2);
             }
-          
             else
             {
                 Students[spot] = student;
