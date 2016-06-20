@@ -92,8 +92,12 @@ namespace SummerSchool
             string student = Console.ReadLine();
 
             int spot = GetNextSpot();
+            
             Students[spot] = student;
-           
+
+            Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £200");
+
+
         }
 
 
