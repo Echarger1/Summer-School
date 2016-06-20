@@ -10,7 +10,7 @@ namespace SummerSchool
     {
         static string[] Students = new string[15];
         static double[] StudentCost = new double[15];
-        static int[] StudentNumber = new int[15];
+        
         static void Main(string[] args)
         
         {
@@ -115,6 +115,23 @@ namespace SummerSchool
                 StudentCost[spot] = cost;
                 Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost/2);
             }
+            else if (student.ToLower() == "longbottom")
+            {
+                Students[spot] = student;
+                StudentCost[spot] = cost;
+                if (CountStudents() < 10)
+                {
+                    Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + 0 % cost);
+                    Console.WriteLine("Press enter to continue");
+                }
+                else
+                {
+                    Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + cost);
+                    Console.WriteLine("Press enter to continue");
+                }
+            }
+
+
             else
             {
                 Students[spot] = student;
@@ -126,6 +143,18 @@ namespace SummerSchool
             
         }
 
+        static int CountStudents()
+        {
+            int Count = 0;
+            for (int i = 0; i < Students.Length; i++)
+            {
+                if (Students[i] != null)
+                {
+                    Count++;
+                }
+            }
+            return Count;
+        }
 
 
     }
