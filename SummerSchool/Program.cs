@@ -92,6 +92,9 @@ namespace SummerSchool
             Console.WriteLine("ENTER STUDENT");
             string student = Console.ReadLine();
             int spot = GetNextSpot();
+            var names = student.Split(' ');
+            string firstName = names[0];
+            string lastName = names[1];
             if (student.ToLower() == "malfoy")
             {
                 Console.WriteLine("THIS STUDENT CAN NOT BE ENTERED");
@@ -132,25 +135,10 @@ namespace SummerSchool
                     Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + cost);
                     Console.WriteLine("Press enter to continue");
                 }
+
             }
-
-
-            else
-            {
-                foreach (char c in student)
-                    if (student == " ")
-                {
-                    Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + 10 % cost);
-                }
-
-                Students[spot] = student;
-                StudentCost[spot] = cost;
-                Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost);
-                
+      
             }
-
-            
-        }
 
         static int CountStudents()
         {
