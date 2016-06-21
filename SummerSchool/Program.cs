@@ -112,20 +112,23 @@ namespace SummerSchool
             else if (student.ToLower() == "potter")
             {
                 Students[spot] = student;
-                StudentCost[spot] = cost;
+                StudentCost[spot] = cost/2;
                 Console.WriteLine(Students[spot] + " WAS ENROLLED AND THEY OWE £" + cost/2);
             }
             else if (student.ToLower() == "longbottom")
             {
-                Students[spot] = student;
-                StudentCost[spot] = cost;
+               
                 if (CountStudents() < 10)
                 {
-                    Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + 0 % cost);
+                    Students[spot] = student;
+                    StudentCost[spot] = cost;
+                    Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + cost * 0);
                     Console.WriteLine("Press enter to continue");
                 }
                 else
                 {
+                    Students[spot] = student;
+                    StudentCost[spot] = cost;
                     Console.WriteLine(Students[spot] + " is now enrolled and will need to pay £" + cost);
                     Console.WriteLine("Press enter to continue");
                 }
