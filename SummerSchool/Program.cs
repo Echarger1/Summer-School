@@ -94,7 +94,7 @@ namespace SummerSchool
             int spot = GetNextSpot();
             var names = student.Split(' ');
             string firstName = names[0];
-            string lastName = names[1];
+            //string lastName = names[1];
             if (student.ToLower() == "malfoy")
             {
                 Console.WriteLine("THIS STUDENT CAN NOT BE ENTERED");
