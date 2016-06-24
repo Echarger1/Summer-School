@@ -1,10 +1,2 @@
 # Summer-School1
-2
-
-2
-
-2
-2
-2
-2
-2
+Software that enrolls and unenrolls students from a certain school.
