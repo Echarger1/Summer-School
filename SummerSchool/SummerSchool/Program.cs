@@ -44,7 +44,7 @@ namespace SummerSchool
             double sum = 0.0;
 
             Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Enrolled Students");
             Console.ResetColor();
             Console.WriteLine();
